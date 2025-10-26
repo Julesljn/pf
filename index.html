@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio de Jules Lejeune, développeur web spécialisé en back-end et intelligence artificielle.">
+    <title>Jules Lejeune - Portfolio</title>
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+
+<body class="is-intro">
+    <div id="intro-overlay" class="intro">
+        <div class="intro__inner">
+            <h1 class="intro__title">Jules Lejeune</h1>
+            <button id="intro-enter" class="intro__button" type="button">Entrer</button>
+        </div>
+    </div>
+    <header class="header">
+        <nav class="header__navCtn">
+            <h1 class="header__title">Jules Lejeune</h1>
+            <ul class="header__nav">
+                <li class="header__nav--item"><a href="#presentation">Présentation</a></li>
+                <li class="header__nav--item"><a href="#parcours">Mon parcours</a></li>
+                <li class="header__nav--item"><a href="#experience">Mes expériences</a></li>
+                <li class="header__nav--item"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section id="presentation" class="presentation">
+            <h2 class="presentation__title">Présentation</h2>
+            <div class="presentation__contentCtn">
+                <p class="presentation_text"></p>
+                <img class="presentation_img" src="./public/assets/img/jules_lejeune_photo.jpeg"
+                    alt="Photo de Jules Lejeune">
+            </div>
+        </section>
+        <section id="parcours" class="parcours">
+            <h2 class="parcours__title">Mon Parcours</h2>
+            <div class="parcours__contentCtn">
+                <article class="parcours__article">
+                    <img class="parcours__img" src="./public/assets/img/logo_eden.webp"
+                        alt="Logo de l'école 'Eden School'">
+                    <div class="parcours__verticalBar"></div>
+                    <div class="parcours__textCtn">
+                        <h3>Eden School | 2021-2025</h3>
+                        <p>École de développement web, j'y ai appris le Html/CSS, le php/SQL. Pour un total de 2800h de
+                            formations, ainsi que 1 an d'alternance.</p>
+                    </div>
+                </article>
+                <article class="parcours__article">
+                    <img class="parcours__img" src="./public/assets/img/logo_epitech.png"
+                        alt="Logo de l'école 'Epitech'">
+                    <div class="parcours__verticalBar"></div>
+                    <div class="parcours__textCtn">
+                        <h3>Epitech | 2025-2028</h3>
+                        <p>Je réalise à Epitech un MSc en intelligence artificielle, ainsi qu'un cursus global de Web,
+                            Java, Administration système et DevOps.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="experience" class="experience">
+            <h2 class="experience__title">Mes Expériences</h2>
+            <div class="experience__content">
+                <div class="experience__corporation">
+                    <h3 class="corporation__name">Mazarine</h3>
+                    <p class="corporation__date">2024-2025</p>
+                    <p class="corporation__job">Développeur Back-End</p>
+                    <div class="corporation__horizontalBar"></div>
+                    <p class="corporation__text">Mazarine accompagne les acteurs du luxe, de la mode et des institutions
+                        culturelles dans leur stratégie de communication digitale et créative.</p>
+                </div>
+                <div class="experience__project">
+                    <article class="experience__project--item">
+                        <h3 class="project__title">Opéra National de Paris</h3>
+                        <img class="project__img" src="./public/assets/img/onp_page.png"
+                            alt="Image de la page d'accueil du site de l'Opéra de Paris">
+                        <p class="project__text">Durant mon alternance j'ai eu la chance de travailler sur le site de
+                            l'Opéra National de Paris, où j'ai traité des tickets de TMA et le développement de nouveaux
+                            projets. Technologies : Laravel 9-10 - Php 8.2 / 8.3</p>
+                    </article>
+                    <article class="experience__project--item">
+                        <h3 class="project__title">Sparfell</h3>
+                        <img class="project__img" src="./public/assets/img/sparfell_page.png"
+                            alt="Image de la page d'accueil du site Sparfell">
+                        <p class="project__text">J'ai eu l'occasion de travailler sur la montée de version WordPress et
+                            de ces plugins ainsi que de la TMA sur le site de Sparfell, un pionné de la vente d'avions
+                            de luxe. Technologies : WordPress</p>
+                    </article>
+                    <article class="experience__project--item">
+                        <h3 class="project__title">Liaigre</h3>
+                        <img class="project__img" src="./public/assets/img/liaigre_page.png"
+                            alt="Image de la page d'accueil du site de Liaigre">
+                        <p class="project__text">J'ai eu l'occasion de travailler sur de la correction de TMA sur le
+                            site de Liaigre, un designer réputé dans l'architecture d'intérieur. Technologies :
+                            WordPress</p>
+                    </article>
+                    <article class="experience__project--item">
+                        <h3 class="project__title">Opium</h3>
+                        <img class="project__img" src="./public/assets/img/opium_page.png"
+                            alt="Image de la page d'accueil du site de Liaigre">
+                        <p class="project__text">Je développe un projet entrepreneurial autour d’une revue géopolitique
+                            dédiée à l’Extrême-Orient. Technologie : Laravel 12 - Alpine JS</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <h2 class="contact__title">Contact</h2>
+            <form class="contact__form" action="/">
+                <div class="contact__inputCtn">
+                    <input class="contact_input" type="text" id="input_name" name="name" placeholder=" " required>
+                    <label class="contact_label" for="input_name">Nom</label>
+                </div>
+                <div class="contact__inputCtn">
+                    <input class="contact_input" type="email" id="input_email" name="email" placeholder=" " required>
+                    <label class="contact_label" for="input_email">Email</label>
+                </div>
+                <div class="contact__inputCtn">
+                    <textarea id="input_textArea" name="message" placeholder=" " required></textarea>
+                    <label class="contact_label" for="input_textArea">Votre message</label>
+                </div>
+                <button class="contact_submit" type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <h2 class="footer__title">Mes Réseaux</h2>
+        <div class="footer__articleCtn">
+            <article class="footer__article">
+                <a target="_blank" class="footer__link" href="https://www.linkedin.com/in/lejeunejules/"><img
+                        class="footer__icone" src="./public/assets/img/linkedin.svg" alt="Icone de LinkedIn">
+                    <h3 class="footer__articleTitle">LinkedIn</h3>
+                </a>
+            </article>
+            <article class="footer__article">
+                <a target="_blank" class="footer__link" href="https://github.com/Julesljn"><img class="footer__icone"
+                        src="./public/assets/img/github.svg" alt="Icone de Github">
+                    <h3 class="footer__articleTitle">GitHub</h3>
+                </a>
+            </article>
+        </div>
+    </footer>
+    <script src="./public/js/script.js"></script>
+    <script src="./public/js/burger.js"></script>
+</body>
+
+</html>
